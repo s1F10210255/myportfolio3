@@ -7,6 +7,32 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner {
+    border: 4px solid rgba(0,0,0,.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: black;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 
 h1,
@@ -248,7 +274,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 140px 0 0 0;
+    padding: 120px 0 0 0;
     overflow: hidden;
     background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
     background-position: center;
@@ -264,13 +290,12 @@ a:focus {
     position: relative;
     text-align: right;
     padding-right: 75px;
-    padding-bottom: 120px;
-    padding-top: 80px;
 }
 
 .hero .hero-image img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
 }
 
 .hero .hero-content {
@@ -796,38 +821,6 @@ a:focus {
     color: #ffffff;
 }
 
-
-
-
-.skill-item {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-right: 10px;
-}
-
-.skill-img {
-    width: 100px; 
-    height: auto;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-    .skill-item {
-        flex-basis: 50%; /* 画面が狭い場合は2列で表示 */
-    }
-}
-
-@media (max-width: 480px) {
-    .skill-item {
-        flex-basis: 100%; /* さらに狭い画面では1列で表示 */
-    }
-}
-
-
-
 @media (max-width: 575.98px) {
     .service .service-text h3 {
         font-size: 16px;
@@ -955,12 +948,12 @@ a:focus {
     width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #008899;
+    background: #EF233C;
 }
 
 .banner .container {
     max-width: 750px;
-    text-align: left;;
+    text-align: center;
 }
 
 .banner .section-header {
@@ -981,8 +974,8 @@ a:focus {
 }
 
 .banner .section-header h2 span {
-    color: #56d022;
-    font-size: 70px;
+    color: #414141;
+    font-size: 50px;
 }
 
 .banner .banner-text p {
@@ -992,7 +985,7 @@ a:focus {
 
 .banner .banner-text .btn {
     margin-top: 15px;
-    color: #d4293d;
+    color: #EF233C;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1501,7 +1494,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #5AB5B2;
+    background: #EF233C;
 }
 
 .footer .container-fluid {
@@ -1558,8 +1551,7 @@ a:focus {
 
 .footer .footer-social a i {
     margin-right: 15px;
-    margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 20px;
     color: #ffffff;
     transition: .3s;
 }

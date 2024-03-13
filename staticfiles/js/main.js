@@ -7,7 +7,7 @@
             if ($('#loader').length > 0) {
                 $('#loader').removeClass('show');
             }
-        }, 1);
+        }, 5000);
     };
     loader();
     
@@ -111,6 +111,8 @@
     var greeting = document.getElementById("greeting");
     greeting.style.opacity = 1;
 });
+
+
 
     
 })(jQuery);

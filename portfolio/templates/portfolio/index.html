@@ -27,6 +27,7 @@
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    
 
         
         <!-- Nav Bar Start -->
@@ -44,8 +45,9 @@
                         <a href="#about2" class="nav-item nav-link">INIADで学んだこと</a>
                         <a href="#about3" class="nav-item nav-link">出来る事</a>
                         <a href="#skills" class="nav-item nav-link">Skills</a>
-                        <a href="#dream" class="nav-item nav-link">目標</a>
+                        
                         <a href="#works" class="nav-item nav-link">My Works</a>
+                        <a href="#dream" class="nav-item nav-link">目標</a>
                         <a href="#blog" class="nav-item nav-link">INIADについて</a>
                     </div>
                 </div>
@@ -332,9 +334,87 @@
 
 
 
+    
 
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="works">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.0s">
+                    <p>My Works</p>
+                    <h2>私の代表的な作品</h2>
+                </div>
+                
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <a href="https://docs.google.com/presentation/d/1w1_D2T0UvYbG_EI5cys9ALDRwPsAR5340EMY5f7kG0Q/edit?usp=sharing" target="_blank">
+
+                                <img src="{% static 'img/cooknroll.png' %}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Cook 'n' roll</h3>
+                                <a class="btn" href="https://docs.google.com/presentation/d/1w1_D2T0UvYbG_EI5cys9ALDRwPsAR5340EMY5f7kG0Q/edit?usp=sharing" target="_blank">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <a href="https://docs.google.com/presentation/d/1oD7q47sfS1jfmxd_VlzCkM-QW7t0R59GULFqRj887ko/edit?usp=sharing" target="_blank">
+
+                                <img src="{% static 'img/gpteacher.png' %}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>GPTeacher</h3>
+                                <a class="btn" href="https://docs.google.com/presentation/d/1oD7q47sfS1jfmxd_VlzCkM-QW7t0R59GULFqRj887ko/edit?usp=sharing" target="_blank">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <a href="https://docs.google.com/presentation/d/1b-4YLbOD0cq3AXtN5VUVwt0MI2TGlP6ihuU8eMVG9Ws/edit?usp=sharing" target="_blank">
+
+                                <img src="{% static 'img/sato.png' %}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>SATO Coffee</h3>
+                                <a class="btn" href="https://docs.google.com/presentation/d/1b-4YLbOD0cq3AXtN5VUVwt0MI2TGlP6ihuU8eMVG9Ws/edit?usp=sharing" target="_blank">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+
+        <br>
+        <br>
+        <br>
+        <div class="section-header text-center">
+                   
+
+            <h2>プログラミングと同じくらい自然が好き</h2>
+            <h2>いちご農家として自然の複雑さを知った</h2>
+            <br>
+            <br>
+            <br>
+            <h2>感じたことは</h2>
+            <h2>人は人だけでは生きることはできない</h2>
+        </div>
+
+
+
+
+        <div class="banner wow zoomIn" data-wow-delay="1s">
             <div class="container" , id="dream">
                 <div class="section-header text-center">
                    
@@ -361,62 +441,6 @@
 
 
 
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="works">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Works</p>
-                    <h2>私の代表的な作品</h2>
-                </div>
-                
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://docs.google.com/presentation/d/1w1_D2T0UvYbG_EI5cys9ALDRwPsAR5340EMY5f7kG0Q/edit?usp=sharing" target="_blank">
-
-                                <img src="{% static 'img/cooknroll.png' %}" alt="Image">
-                                </a>
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Cook 'n' roll</h3>
-                                <a class="btn" href="https://docs.google.com/presentation/d/1w1_D2T0UvYbG_EI5cys9ALDRwPsAR5340EMY5f7kG0Q/edit?usp=sharing" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://docs.google.com/presentation/d/1oD7q47sfS1jfmxd_VlzCkM-QW7t0R59GULFqRj887ko/edit?usp=sharing" target="_blank">
-
-                                <img src="{% static 'img/gpteacher.png' %}" alt="Image">
-                                </a>
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>GPTeacher</h3>
-                                <a class="btn" href="https://docs.google.com/presentation/d/1oD7q47sfS1jfmxd_VlzCkM-QW7t0R59GULFqRj887ko/edit?usp=sharing" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <a href="https://docs.google.com/presentation/d/1b-4YLbOD0cq3AXtN5VUVwt0MI2TGlP6ihuU8eMVG9Ws/edit?usp=sharing" target="_blank">
-
-                                <img src="{% static 'img/sato.png' %}" alt="Image">
-                                </a>
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>SATO Coffee</h3>
-                                <a class="btn" href="https://docs.google.com/presentation/d/1b-4YLbOD0cq3AXtN5VUVwt0MI2TGlP6ihuU8eMVG9Ws/edit?usp=sharing" target="_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
 
 
         <!-- Blog Start -->
@@ -428,7 +452,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.6s">
                             <div class="blog-img">
                                 <a href="https://www.iniad.org/blog/2023/04/14/generative-ai/" target="_blank">
 
@@ -449,7 +473,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
                             <div class="blog-img">
                                 <a href="https://www.iniad.org/blog/2023/05/09/post-1699/" target="_blank">
 
