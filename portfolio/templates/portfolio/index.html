@@ -1,0 +1,532 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Rintaro Watanabe</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" href="{% static 'img/android-icon-96x96.png' %}" type="image/x-icon">
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+        
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand">Rintaro Portfolio</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about1" class="nav-item nav-link">経歴</a>
+                        <a href="#about2" class="nav-item nav-link">INIADで学んだこと</a>
+                        <a href="#about3" class="nav-item nav-link">出来る事</a>
+                        <a href="#skills" class="nav-item nav-link">Skills</a>
+                        <a href="#dream" class="nav-item nav-link">目標</a>
+                        <a href="#works" class="nav-item nav-link">My Works</a>
+                        <a href="#blog" class="nav-item nav-link">INIADについて</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>僕の名前は</p>
+                                <h1>渡辺 倫太郎</h1>
+                                <p>Rintaro Watanabe</p>
+                                <p>Please call me Rin chan</p>
+                                <h2></h2>
+                                <div class="typed-text">strawberry farmer, Web Designer, Web Developer, Apps Designer, Apps Developer</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="{% static 'img/rintaro3.jpeg' %}" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!--経歴 -->
+
+        <div class="experience" id="about1">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>about me</p>
+                    <h2>経歴</h2>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">1999 9 21</div>
+                            <h2>茨城県つくば市で生まれる</h2>
+                            <p>
+                                私は、父が循環器内科の医師であり、母が銀行員である家庭に生まれました。医療関係者に囲まれた環境で育ち、自然を愛する心を育んできました。小さい頃から、車のエアコンを付けると不機嫌になるほど、新鮮な空気と緑豊かな景色を好んでいました。このような幼少期の経験が、私の人生観や価値観を形成する重要な要素となっています。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2012 - 2015</div>
+                            <h2>茗渓学園中学校入学</h2>
+                            <p>
+                                ラグビー部に所属し、部活中心の生活をしていました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2015 - 2018</div>
+                            <h2>茗渓学園高校入学</h2>
+                            <p>
+                                怪我をきっかけに、ラグビー部を辞めざるを得なくなりました。退部後、進路を改めて考え直す中で、父が医師であったことも影響し、子供の頃から抱いていた医師になるという夢に焦点を当てることにしました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2018 - 2021</div>
+                            <h2>浪人時代</h2>
+                            <p>
+                                現役の時には医学部への道は叶わず、それでも医師になる夢を諦めきれずに、浪人を決意しました。3年間の長きにわたり、成人式をはじめとするさまざまなイベントを断念し、孤独と戦いながらも、絶対に医師になるという一心で勉強に励みました。しかし、夢は叶わず、そのプレッシャーは過呼吸を引き起こすほどで、父の手によって救われることもありました。途方に暮れていたその時、ICTを駆使した新しいスタイルの大学に出会い、何か新しいことに挑戦したいという思いに駆られ、その大学への入学を決意しました。しかし、心の片隅には、医師への夢を捨てきれずにいた自分がいました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2021 - 2022</div>
+                            <h2>東洋大学 情報連携学部 INIAD 入学</h2>
+                            <h4>プログラミングの基礎を学ぶ</h4>
+                            <p>
+                                複雑な感情を抱えながらINIADに入学した私は、新築されたばかりのキャンパスのすべてが輝いて見えました。坂村健学部長の講義を聞いた際の衝撃は今も鮮明に記憶しています。中でも、ICTと農業を組み合わせて世界一の農業生産効率を実現したオランダの農家の話には心を揺さぶられました。それが、私が農業に興味を持ち始めたきっかけです。自分も実際に農業に触れてみたいという強い思いから、いちご農家でのアルバイトをスタートさせることにしました。この経験が、私に新たな世界を開く扉となったのです。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2022 - 2023</div>
+                            <h2>大学2年 エンジニアリングコースを選択</h2>
+                            <p>
+                                INIADでの学びは、エンジニアリング、デザイン、ビジネス、シビルシステムの4つの分野に別れ、各自が専門性を磨きます。私はエンジニアリングコースを選択し、技術の核心に迫るような学問に没頭しました。
+                                実習では、チームで協力し、実際のビジネスシーンを想定したプロジェクトに挑戦しました。その一環として、Stripe APIを使用して、IT化が遅れていた古い喫茶店がデジタルトランスフォーメーションを経験するというシナリオのもと、オンラインでの注文システムを構築しました。このプロジェクトを通じて、古き良き文化を大切にしつつも、新しい技術を取り入れて業務改善を行う重要性を学び、将来に向けた大きな一歩を踏み出しました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2023 - 2024</div>
+                            <h2>大学3年 情報連携実習３で選抜チームに</h2>
+                            <h4>衝撃の登場 Chat GPT</h4>
+                            <p>
+                                大学3年生の春、私たちは学部長からの驚きの発表を受けました。全学生にChat GPTを無料で提供するというのです。このAI技術はまだ新しく、教育現場での導入については議論が活発に行われている最中でした。一部の大学では教育上の理由からChat GPTが禁止されているほどです。大学教育がこの新技術によってどのように変化するのかは未知数でしたが、INIADは積極的にChat GPTを活用しようとしていました。
+                            </p>
+                            <p>
+                                同じ年、INIADでは「情報連携実習3」という実習があります。この実習では、エンジニアリング、デザイン、ビジネス、シビルシステムの各コースから学生が一つのチームを組み、学部長が提示したテーマに沿ってサービスの企画から開発、発表までを行うというものです。今年のテーマは「Chat GPTを使って何かをする」でした。当初、私たちのチームはAIを使った献立提案アプリの開発を考えていましたが、市場調査の結果、動画ベースのレシピが人気であることがわかり、方針を転換しました。結果として、YouTubeの字幕機能と組み合わせた、ユーザーとAIが対話するシステムを考案し、Flutterを使用してアプリケーションを開発しました。このプロジェクトは高く評価され、学年を代表して成果を発表する機会を得ました。この経験は、技術力の向上はもちろん、チームワークの重要性を学ぶ貴重な機会となりました。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--経歴 終わり-->
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about2">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="{% static 'img/iniad.jpeg' %}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>About me</p>
+                                <h2>INIAD で学んだこと</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    INIADでの学びは、単に技術を習得することだけではなく、それをどのように社会に役立てるかという視点も重要視されました。エンジニアリングコースでの学習を通じて、最新の技術トレンドを理解し、プログラミング、システム設計、データ分析などの実践的なスキルを身につけました。しかし、それだけではなく、デザイン、ビジネス、シビルシステムの学生と共同でプロジェクトを行う中で、異なる専門分野の知識を融合させ、より幅広い視野を持つことの重要性も学びました。
+                                </p>
+                                <p>
+                                    また、INIADでは単に知識を詰め込むのではなく、主体的に学び、自ら問題を発見し、解決策を考案する力を養うことが強調されました。情報連携実習などでのプロジェクトでは、実際の社会課題に取り組み、その解決のために技術を活用する方法を考えることが求められました。このような経験を通して、単に技術者としてのスキルだけでなく、社会に貢献するための視点や考え方を学ぶことができました。
+                                </p>
+                                <p>
+                                    INIADでの学びは、技術の習得だけに留まらず、それをどのように社会に役立てるか、異なる専門分野とどのように連携するかという点に重点を置いています。これらの経験は、将来のキャリアにおいても大いに役立つものと確信しています。
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="service" id="about3">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>what i can do</p>
+                    <h2>私ができること</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Web Design</h3>
+                                <p>
+                                    プログラミングスキルを持つデザイナーの需要が高まっています。そのため、私はエンジニアリングとデザインの双方の知識を身につけました。              
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Web Development</h3>
+                                <p>
+                                    Web開発の技術を学び、フロントエンドとバックエンドの両方の知識を深めました。データベースの操作やAPIの使用、セキュリティ対策など、Web開発における重要な要素についても学びました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Design</h3>
+                                <p>
+                                UIとUXの両方に重点を置いています。良いアプリデザインは単に見た目が美しいだけでなく、ユーザーが直感的に操作でき、目的を達成しやすいものであるべきだと考えています。シンプルであるべきと考えます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Development</h3>
+                                <p>
+                                    Flutter,Javaで、ウィジェットベースのUI構築、状態管理、API連携などの様々な技術を学んできました。また、Firebaseを使用してバックエンドの機能を実装し、リアルタイムデータベースや認証機能をアプリに統合する経験もあります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills" id="skills">
+                        <div class="container">
+                            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                                <p>My Skills</p>
+                                <h2>主に使う言語</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/html5.png' %}" alt="HTML5" class="skill-img">
+                                        <p>HTML5</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/CSS3_logo.svg.png' %}" alt="CSS3" class="skill-img">
+                                        <p>CSS3</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/js.png' %}" alt="JavaScript" class="skill-img">
+                                        <p>JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/python.png' %}" alt="Python" class="skill-img">
+                                        <p>Python</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/django.png' %}" alt="Django" class="skill-img">
+                                        <p>Django</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/c.png' %}" alt="C Language" class="skill-img">
+                                        <p>C</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/firebase.png' %}" alt="Firebase" class="skill-img">
+                                        <p>Firebase</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="skill-item">
+                                        <img src="{% static 'img/flutter.png' %}" alt="Flutter" class="skill-img">
+                                        <p>Flutter</p>
+                                    </div>
+                                </div>
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+
+
+        <!-- Banner Start -->
+        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container" , id="dream">
+                <div class="section-header text-center">
+                   
+                    <h2>私の目指すデザインは</h2>
+                    <h2>人間中心だけではない</h2>
+                    <h2><span>自然</span>も含めたデザイン</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        いちご農家としての経験を通じて、私は自然との調和が如何に不可欠であるかを深く実感しました。自然を尊重し、その要素をデザインとして取り入れることが、より豊かで持続可能な未来への鍵となり得ると確信しています。自然の美しさと力を生かし、人々の生活に積極的な影響を与えるデザインを追及したいと思っています。
+                        <br><br>
+                        最近の環境活動家たちがメディアで話題になることがありますが、彼らの中には人間が自然から生じた存在であることを十分に理解していないように感じることがあります。人間は自然の産物であり、したがって環境破壊の側面も自然の一端と捉えられるのではないでしょうか。これは人間の文明と環境を一つの連続体として考える視点をもたらします。
+                        <br><br>
+                        ただし、私たちは現代社会において石油などの資源に依存しており、これを突如として絶つことは現実的ではありません。極端な措置は、私たちの生活を直面する多くの問題に対して現実的な解決策を提供しません。そのため、日々の暮らしを慎重に考慮しつつ、環境に配慮したデザインを推進することが、今後10年、30年という長期的な視野で見ても最も重要だと考えています。
+                        <br><br>
+                        私たちは自然に敬意を払いながらも、文明を前進させる方法を見出さなければなりません。持続可能なデザインはこの橋渡しをする手法の一つであり、私たちは自然のリズムに耳を傾けることで、生活空間へと自然の和やかな息吹を取り込むことができるのです。これからの時代において、デザインはただの見た目の美しさを追求するだけではなく、地球との調和を考え、その恵みを活かして人々の営みを豊かにする責任があります。これは、私たち一人一人が日常生活の中で、自然との共生を意識することから始まり、さらには農業から都市設計に至るまで、様々な分野において実現されなければならない急務な課題です。私はイチゴ農家としての経験を通じて得たこの洞察を、デザインの世界へと持ち込み、人々の生活を育む環境としての役割を果たしていく所存です。
+                    </p>
+                </div>                
+            </div>
+        </div>
+        <!-- Banner End -->
+
+    
+
+
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="works">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Works</p>
+                    <h2>私の代表的な作品</h2>
+                </div>
+                
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <a href="https://docs.google.com/presentation/d/1w1_D2T0UvYbG_EI5cys9ALDRwPsAR5340EMY5f7kG0Q/edit?usp=sharing" target="_blank">
+
+                                <img src="{% static 'img/cooknroll.png' %}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Cook 'n' roll</h3>
+                                <a class="btn" href="https://docs.google.com/presentation/d/1w1_D2T0UvYbG_EI5cys9ALDRwPsAR5340EMY5f7kG0Q/edit?usp=sharing" target="_blank">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <a href="https://docs.google.com/presentation/d/1oD7q47sfS1jfmxd_VlzCkM-QW7t0R59GULFqRj887ko/edit?usp=sharing" target="_blank">
+
+                                <img src="{% static 'img/gpteacher.png' %}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>GPTeacher</h3>
+                                <a class="btn" href="https://docs.google.com/presentation/d/1oD7q47sfS1jfmxd_VlzCkM-QW7t0R59GULFqRj887ko/edit?usp=sharing" target="_blank">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <a href="https://docs.google.com/presentation/d/1b-4YLbOD0cq3AXtN5VUVwt0MI2TGlP6ihuU8eMVG9Ws/edit?usp=sharing" target="_blank">
+
+                                <img src="{% static 'img/sato.png' %}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>SATO Coffee</h3>
+                                <a class="btn" href="https://docs.google.com/presentation/d/1b-4YLbOD0cq3AXtN5VUVwt0MI2TGlP6ihuU8eMVG9Ws/edit?usp=sharing" target="_blank">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+
+        <!-- Blog Start -->
+        <div class="blog" id="blog">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>From Blog</p>
+                    <h2>INIAD について</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <a href="https://www.iniad.org/blog/2023/04/14/generative-ai/" target="_blank">
+
+                                <img src="{% static 'img/20.jpg' %}" alt="Blog">
+                                </a>
+                            </div>
+                            <div class="blog-text">
+                                <h2>生成系AIに関するINIADの見解</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>坂村 健</p>
+                                    <p><i class="far fa-calendar-alt"></i>2023年4月14日</p>
+                                </div>
+                                <p>
+                                    東洋大学情報連携学部（INIAD）の学部長である坂村健は、AI時代に「自分の頭で考える」重要性を強調しています。彼は、直感的で簡単な思考（システム1）ではなく、論理的で分析的な思考（システム2）を推奨しています。坂村は、生成系AI、特にChatGPTを使って学生の思考力を高めることを提案し、その使用に制限を設けない方針を示しています。ただし、AIに依存した浅はかな使い方が目立つようなら、利用制限を検討するとしています。INIADは、ChatGPTとの対話を通じて思考力を深めるための支援を提供し、テクノロジーの進歩を活かせる人材育成を目指しています。
+                                </p>
+                                <a class="btn" href="https://www.iniad.org/blog/2023/04/14/generative-ai/">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-img">
+                                <a href="https://www.iniad.org/blog/2023/05/09/post-1699/" target="_blank">
+
+                                <img src="{% static 'img/iniad2.jpg' %}" alt="Blog">
+                                </a>
+                            </div>
+                            <div class="blog-text">
+                                <h2>INIAD 全学生向けにGPT-4を活用させる革新的な教育システム導入</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>INIAD</p>
+                                    <p><i class="far fa-calendar-alt"></i>2023年5月9日</p>
+                                </div>
+                                <p>
+                                    東洋大学情報連携学部（INIAD）は、教育におけるAIの積極的な利用を目的として、新しいAI管理運用プラットフォーム「AI-MOP」を開発し、学生全員がGPT-4という上位の生成系AIモデルを使うためのシステムを導入しました。このプラットフォームは、学生が対話を通じて自学したり、プログラミングスキルを磨いたりできるように設計されており、教員は学生の進捗を追跡できます。Slackを介してGPT-4にアクセスすることで、学生のAI活用を効率的に管理し、学習効果を最大化しています。INIADでは、AIを活用した教育環境を学生に提供し、将来的に情報技術の分野での発展に貢献することを目指していると共に、学問領域を超えた連携による多様な人材の育成も視野に入れている。
+                                </p>
+                                <a class="btn" href="https://www.iniad.org/blog/2023/05/09/post-1699/">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>渡辺 倫太郎</h2>
+                        <h3>ワタナベ リンタロウ</h3>
+                        <h3>s1f102102559@iniad.org</h3>
+
+                        <div class="footer-social">
+                            <a>github</a>
+                            <a href="https://github.com/s1F10210255"><i class="fab fa-github"></i></a>
+                        </div>
+
+                        <div class="footer-download">
+                            <a href="https://drive.google.com/uc?export=download&id=1jP7N_KDIch_EvjgE5He3u-ci-J_ijC7s" class="btn btn-download" target="_blank">ポートフォリオPDFをダウンロード</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p>&copy; <a>Rintaro Watanabe portfolio</a>, All Right Reserved | INIAD <a href="https://www.iniad.org/">ホームページ</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/typed/typed.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+        <script src="{% static 'mail/contact.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
+
