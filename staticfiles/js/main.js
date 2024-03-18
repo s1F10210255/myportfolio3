@@ -7,9 +7,11 @@
             if ($('#loader').length > 0) {
                 $('#loader').removeClass('show');
             }
-        }, 5000);
+        }, 4000);
     };
     loader();
+
+    
     
     
     // Initiate the wowjs
